@@ -10,6 +10,11 @@ router.get('/', (req, res) => {
   res.respondGet(null, 'welcome to new app');
 });
 
+// dokumentasi
+router.get('/dokumentasi', function (req, res) {
+  res.redirect('https://documenter.getpostman.com/view/13146980/2s9XxzvD8y');
+});
+
 // Authentication
 router.use('/', authRouter);
 
